@@ -1,0 +1,13 @@
+<p><strong>{{sessionTimeoutService.idleState}}</strong></p>
+<!-- <p *ngIf="lastPing"><small>Last keepalive ping <strong>{{lastPing | amTimeAgo}}</strong></small></p> -->
+<button (click)="sessionTimeoutService.reset()" *ngIf="sessionTimeoutService.timedOut">Restart</button>
+
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>

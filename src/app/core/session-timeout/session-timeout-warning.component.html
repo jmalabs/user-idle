@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 mat-dialog-title>Need More Time?</h2>
+  <div mat-dialog-content class="message">
+    <div>Your session is about to expire. You will be automatically singed out in:</div>
+    <div>
+      <h3>{{minutes > 9? minutes: '0'+minutes}}:{{seconds > 9? seconds: '0'+seconds}}</h3>
+      <!-- <h3>{{dialogRef.componentInstance.countdown}}</h3> -->
+    </div>
+    <div>To continue your session, select Stay Signed In.</div>
+
+  </div>
+  <mat-dialog-actions>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>Stay Signed In</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="false">Sign out</button>
+  </mat-dialog-actions>
+</div>
